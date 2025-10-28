@@ -1,0 +1,109 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+
+/* Tambahan: spasi untuk konten agar tidak tertutup header fixed */
+main, section, .content {
+  padding-top: 6rem;
+}
+
+/* === Hero Section === */
+.hero {
+  background-color: #ff7f00; /* oranye BPS */
+  color: white;
+  text-align: left;
+  padding: 50px 50px;
+}
+
+/* === Section === */
+.section {
+  padding: 5rem 0;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f97316;
+  margin-bottom: 2rem;
+}
+.section-text {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+/* === Cards === */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  color: #f97316;
+  margin: 0 auto 1rem;
+}
+
+/* === Footer === */
+.footer {
+  background: #f97316;
+  color: white;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+/* === Animation === */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards;
+}
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 1.2s 0.3s forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hero { padding: 6rem 1.5rem 4rem; }
+  .section { padding: 3rem 1rem; }
+}
+
+.card .icon {
+  width: 40px;
+  height: 40px;
+  color: #ff7f00;
+  margin-bottom: 15px;
+}
+
+.blok-title {
+  display: inline-block;
+  color: black;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+#kontak {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
